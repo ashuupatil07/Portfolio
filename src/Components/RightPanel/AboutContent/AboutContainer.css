@@ -1,0 +1,90 @@
+.dp-about-container {
+    height: 100vh;
+    box-sizing: border-box; /* Ensure padding is included in the total height */
+    overflow: hidden; /* Prevent overflow from the main container */
+    font-family: "Roboto", sans-serif;
+}
+
+.dp-about-container__inner {
+    display: flex;
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+    border-radius: 4px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 2px 0.5px aqua;
+    margin: 10px;
+    height: 100%;
+}
+
+.dp-about-container__left {
+   
+    margin: 15px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    gap:10px;
+    overflow: auto;
+}
+.dp-about-container__photo{
+    border-radius: 2px;
+    flex: 1;
+    color: black;
+    font-size: large;
+    /* background-size: cover;
+    background-position: center;
+    background-image: url("https://media.licdn.com/dms/image/D4D03AQFYMTH1pNVYDg/profile-displayphoto-shrink_800_800/0/1713025586938?e=1723075200&v=beta&t=XJleENXoPNvvLaUAMRL-qnx7n61LoIEJjmBznWrWQho"); */
+}
+
+.dp-about-container__tree{
+color: black;
+flex: 1;
+height: 100%;
+overflow: auto;
+}
+.dp-about-container__right {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+    margin: 15px;
+    color: black;
+    border-radius: 6px;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    font-size: x-large;
+}
+
+
+.css-1qo6i9c{
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .dp-about-container {
+        height: 100vh;
+        padding: 10px;
+    }
+    .dp-about-container__inner {
+        flex-direction: column;
+        height: 100%;
+        margin: 1px;
+    }
+    .dp-about-container__left {
+        margin: 10px;
+        overflow: auto;
+    }
+    .dp-about-container__right {
+        max-height: calc(100vh - 180px); /* Adjust for photo height and margins */
+        margin: 10px;
+    }
+    .dp-about-container__tree{
+        color: black;
+        flex: 1;
+        height: 100%;
+        overflow: auto;
+        }
+        .dp-about-container__photo{
+            flex :1;
+            overflow: auto;
+        }
+}

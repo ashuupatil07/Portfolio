@@ -1,0 +1,32 @@
+
+
+.dp-resume-stepper__root .MuiStepIcon-text {
+   content: "";
+}
+
+.dp-resume-stepper__root .MuiStepIcon-root{
+    color: lightblue;
+    font-size: 1.5rem;
+}
+
+.dp-resume-stepper-root__label .MuiStepLabel-label {
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    color:blue;
+    letter-spacing:  1.6px;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+.dp-resume-stepper-node__label .MuiStepLabel-label {
+    font-size: large ; 
+    color:black;
+}
+.dp-resume-stepper__description .MuiCollapse-wrapperInner{
+    font-size: large;
+    color:black;
+}
+
+
+

@@ -1,0 +1,63 @@
+/* LeftPanel.css */
+
+.dp-left-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Space items evenly */
+    align-items: center;
+    height: 100%; /* Full height */
+    font-family: 'Bebas Neue', cursive;
+     /* Prevent scrollbar */
+}
+
+.dp-left-panel__my-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.dp-left-panel__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center items */
+    padding: 10px;
+    color: #fff;
+    overflow: hidden; /* Prevent scrollbar */
+    gap: 20px;
+}
+.icon-button-text {
+    margin-left: 8px; /* Adjust the spacing between the icon and text */
+    font-size: 1rem; /* Adjust font size if needed */
+    display: inline-flex; /* Ensure text and icon are aligned */
+    align-items: center;
+}
+.dp-left-panel__links  {
+    margin: 15px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.dp-left-panel__links :hover {
+    color: #00aaff;
+}
+
+@media (max-width: 768px) {
+    .dp-left-panel {
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .dp-left-panel__links {
+        padding: 5px;
+        width: 100%;
+        gap: 20px;
+    }
+}
